@@ -37,7 +37,7 @@
                     <a class="nav__link" href="">about me</a>
                     <a class="nav__link" href="">blog</a>
                     <a class="nav__link" href="">contact</a>
-                    <a class="nav__link nav__link--btn" href="">hire me</a>
+                    <a class="nav__link nav__link--btn" href="" data-modal="#modal_hire_me">hire me</a>
                 </nav>
             </div>
         </div>
@@ -73,8 +73,8 @@
                         </a>
                     </div>
 
-                    <a class="btn" href="">HIRE ME</a>
-                    <button class="btn" type="button">SEE MY RESUME</button>
+                    <a class="btn" href="" data-modal="#modal_hire_me">HIRE ME</a>
+                    <button class="btn" type="button"  data-modal="#modal_resume">SEE MY RESUME</button>
                 </div>
 
                 <img class="intro__photo" src="images/photo.png" alt="">
@@ -95,7 +95,7 @@
             <div class="portfolio" id="portfolio">
                 <div class="portfolio__col" data-cat="app">
 
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="http://placehold.it/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category: app</div>
@@ -368,9 +368,9 @@
 
 
     <!-- Modals -->
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_project_1">
         <div class="modal__dialog">
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-close>
                 <img src="images/modal-close.svg" alt="Close">
             </button>
             <div class="modal-work">
@@ -415,9 +415,9 @@
         </div><!-- /.modal__dialog -->
     </div><!-- /.modal -->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_resume">
         <div class="modal__dialog">
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button"  data-close>
                 <img src="images/modal-close.svg" alt="Close">
             </button>
 
@@ -543,9 +543,9 @@
     </div><!-- /.modal -->
 
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_hire_me">
         <div class="modal__dialog modal__dialog--sm">
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-close>
                 <img src="images/modal-close.svg" alt="Close">
             </button>            
                 <div class="contact">                    
